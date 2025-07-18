@@ -147,10 +147,10 @@ def update_frame():
                 id, conf = recognizer.predict(roi_gray)
                 
                 # 在图像上显示识别结果
-                label = f"ID:{id} conf:{1-conf:.0f}%"
+                label = f"ID:{id} conf:{conf:.0f}%"
                 cv.putText(frame, label, (x, y - 10), cv.FONT_HERSHEY_SIMPLEX, 0.9, (0, 200, 0), 2)
                 
-                if conf < 80:  # 置信度阈值
+                if conf < 60:  # 置信度阈值
                     # 从数据库查询人员信息
                     conn = sqlite3.connect('face_attendance.db')
                     c = conn.cursor()
