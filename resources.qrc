@@ -1,0 +1,11 @@
+<!DOCTYPE RCC> 
+<RCC version="1.0">     
+    <qresource prefix="/images">         
+        <file>img/z.jpg</file>
+        <file>img/打开摄像头.png</file>
+        <file>img/人脸识别.png</file>
+        <file>img/数据采集.png</file>
+        <file>img/保存.png</file>
+        <file>img/查询.png</file>
+    </qresource> 
+</RCC>
